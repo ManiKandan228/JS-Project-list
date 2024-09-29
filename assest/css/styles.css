@@ -1,0 +1,529 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color:#ccc; 
+}
+
+h2{
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+}
+
+header {
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 1px; 
+}
+
+.project {
+    padding: 15px; 
+    background-color: #1e1d5a;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    text-align:center;
+    padding: 10px;
+    border:1px solid #ccc;
+    background:#404c68;
+    color:#fff; 
+}
+/* 1 */
+#project-1 .p{
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+}
+/* 4 */
+.progress-container {
+    width: 100%; 
+    background-color: #ddd; 
+    margin: 10px 0; 
+}
+
+.progress-bar {
+    height: 20px; 
+    width: 0;
+    background-color: #4caf50;
+    transition: width 0.5s; 
+}
+
+/* 5 */
+.highlight {
+    background-color: rgb(67, 172, 111); 
+}
+
+/* 6 */
+#project-6 .slider {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+#project-6 .slider-content {
+    width: 300px;
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+#project-6 .slide {
+    display: none;
+    font-size: 1.2rem;
+    color: #fff;
+    padding: 10px;
+    background-color: #404c68;
+}
+
+#project-6 .slide.active {
+    display: block;
+}
+
+#project-6 .prev-icon, #project-6 .next-icon {
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+    padding: 10px;
+}
+
+#project-6 .prev-icon {
+    margin-right: 10px;
+}
+
+#project-6 .next-icon {
+    margin-left: 10px;
+}
+
+/* 7 */
+#project-7 .pagination-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.pagination.numeric-pagination button {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    background-color: #404c68;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.pagination.numeric-pagination button.active {
+    background-color: #1e1d5a;
+    font-weight: bold;
+}
+
+.pagination.bullet-pagination span {
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.pagination.bullet-pagination span.active {
+    background-color: #27a9ad;
+}
+
+/* 8 */
+#project-8 {
+    text-align: center;
+}
+
+#error-message {
+    color: red;
+    display: none; 
+}
+
+input {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #1e1d5a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #404c68;
+}
+
+/* 9 Task List*/
+
+#project-9 {
+    text-align: center;
+}
+
+#task-input {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#add-task {
+    padding: 10px 15px;
+    background-color: #1e1d5a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+#task-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #c95454;
+    margin: 5px 0;
+    border-radius: 4px;
+}
+
+.delete-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: darkred;
+}
+
+/* No.10 Build Table */
+
+#project-10 {
+    text-align: center;
+}
+
+#row-input,
+#col-input {
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#generate-table {
+    padding: 10px 15px;
+    background-color: #1e1d5a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#generate-table:hover {
+    background-color: #404c68;
+}
+
+#table-container {
+    margin-top: 15px;
+    overflow-x: auto; 
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0 auto;
+}
+
+td, th {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #1e1d5a;
+    color: white;
+}
+
+#clear-table {
+    padding: 10px 15px;
+    background-color: #e74c3c; 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* 11.Column */
+
+#columns-container {
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.column {
+    background-color: #3498db; 
+    color: white;
+    padding: 10px;
+    text-align: center;
+    min-width: 100px;
+}
+
+#clear-columns {
+    padding: 10px 15px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* 12.Animation */
+
+.name-display {
+    font-size: 2em;
+    margin-top: 20px; 
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+.rotate {
+    animation: rotate-text 2s infinite;
+    display: inline-block; 
+}
+
+@keyframes rotate-text {
+    0% {
+        transform: rotate(0deg);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(360deg);
+        opacity: 0;
+    }
+}
+/* 13.Timer */
+#timer-display {
+    font-size: 2em;
+    margin-top: 20px;
+    color: #ff0000; 
+}
+#timer-input {
+    width: 150px;
+    padding: 5px; 
+    margin-right: 10px;
+}
+
+/* 14. Date Countdown */
+#countdown-display {
+    font-size: 1.5em;
+    margin-top: 20px; 
+    color: #0e0909;
+}
+
+/* 15.AutoComplete Box */
+
+.suggestions-list {
+    border: 1px solid #0a0a0a;
+    max-height: 150px;
+    overflow-y: auto;
+    display: none; 
+    position: absolute;
+    background-color: rgb(85, 86, 87);
+    z-index: 100; 
+}
+
+.suggestions-list div {
+    padding: 10px; 
+    cursor: pointer; 
+}
+
+/* 16.Background colour */
+
+.project-16{
+    padding: 15px; 
+    background-color: #1e1d5a;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+    border: 1px solid #ccc;
+    background: #404c68;
+    color: #fff; 
+    margin: 10px 0; 
+}
+
+select {
+    padding: 10px;
+    font-size: 16px;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+}
+/* 17.Background swap */
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #615959;
+    border: 1px solid #ccc;
+    overflow: hidden; 
+}
+
+.box img {
+    max-width: 200%;
+    max-height: 200%; 
+}
+
+#swap-btn {
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: DodgerBlue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#swap-btn:hover {
+    background-color: deepskyblue;
+}
+
+/* 18. Title change */
+
+#start-stop-btn {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#start-stop-btn:hover {
+    background-color: #005f6b;
+}
+
+#output {
+    margin-top: 15px;
+}
+
+/* 19.Image swap text */
+.container-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.container {
+    background-color: #524848;
+    padding: 25px;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+}
+.container img {
+    display: none;
+    width: 300%;
+    height: 200%;
+}
+
+.container p {
+    margin: 0;
+}
+
+.container:hover img {
+    display: block;
+}
+
+.container:hover p {
+    display: none;
+}
+
+.hover-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* 20.Image control */
+
+.image-container {
+    margin: 10px auto;
+    width: 200px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    transition: all 0.3s ease;
+}
+
+input[type="range"] {
+    width: 50%;
+    margin-top: 5px;
+}
+
+/* 21.Lazy load */
+
+
+#particles-js {
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+

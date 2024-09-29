@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Mini Projects</title>
+    <link rel="stylesheet" href="./assest/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <h1>JS Projects</h1>
+    </header>
+
+    <main>
+        <div class="project-grid">
+            <!-- 1.Read more -->
+            <div class="project" id="project-1">
+                <h2>1. Read More</h2>
+                <p>Some initial content... 
+                    <span class="more-text" style="display:none;">Here is some additional content that is initially hidden but will be revealed when you click "Read More".</span>
+                </p>
+                <button class="read-more">Read More</button>
+            </div>
+            <!-- 1.Color Change -->
+            <div class="project" id="project-2">
+                <h2>2. Random Background</h2>
+                <button class="change-bg">Change Color</button>
+            </div>
+            <!-- 3.Sticky Header -->
+            <div class="project" id="project-3">
+                <h2>3. Sticky Header</h2>
+                <p>Scroll down to see the sticky header</p>
+            </div>
+            <!-- 4.Progress Bar -->
+            <div class="project" id="project-4">
+                <h2>4. Progress Bar</h2>
+                <div class="progress-container">
+                    <div class="progress-bar" id="progress-bar"></div>
+                </div>
+                <button class="start-progress">Start</button>
+                <button class="reset-progress">Reset</button> 
+            </div>
+            <!-- 5.Search -->
+            <div class="project" id="project-5">
+                <h2>5. Search and Highlight</h2>
+                <input type="text" id="search-input" placeholder="Enter word to search...">
+                <button class="search-button">Search</button>
+                <button class="clear-button">Clear</button> 
+                <div class="content" style="display: none;">
+                    <p>This is an example paragraph that contains some text. You can search for specific words in this text.</p>
+                    <p>Another paragraph is here with different content. Feel free to highlight any word you want.</p>
+                    <p>Keep typing to find all instances of your search term in these paragraphs.</p>
+                </div>
+            </div>            
+            <!-- 6.Object Slider -->
+            <div class="project" id="project-6">
+                <h2>6. Object Slider</h2>
+                <div class="slider">
+                    <i class="fa fa-chevron-left prev-icon"></i>
+                    <div class="slider-content">
+                        <div class="slide active">Object 1</div>
+                        <div class="slide">Object 2</div>
+                    </div>
+                    <i class="fa fa-chevron-right  next-icon"></i>
+                </div>
+            </div>   
+            <!-- 7.Pagination -->
+            <div class="project" id="project-7">
+                <h2>7. Pagination</h2>
+                
+                <div class="pagination-container">
+                    <div class="pagination numeric-pagination"></div>
+                    <div class="pagination bullet-pagination"></div>
+                </div>
+            </div>
+            <!-- 8.Form Validation -->
+            <div class="project" id="project-8">
+                <h2>8. Form Validation</h2>
+                <form id="email-form">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                    <span id="error-message" class="error"></span>
+                    <button type="submit">Submit</button>
+                </form>
+            </div> 
+            <!--9.Task List-->
+            <div class="project" id="project-9">
+                <h2>9. Task List</h2>
+                <input type="text" id="task-input" placeholder="Add a new task" />
+                <button id="add-task">Add Task</button>
+                <ul id="task-list"></ul>
+            </div>
+            <!--10.Build Table-->
+            <div class="project" id="project-10">
+                <h2>10.Build Table</h2>
+                <input type="number" id="row-input" placeholder="No.of Rows" min="1" />
+                <input type="number" id="col-input" placeholder="No.of Columns" min="1" />
+                <button id="generate-table">Generate Table</button>
+                <button id="clear-table">Clear</button>
+                <div id="table-container"></div>
+            </div>
+            <!--11.Column-->
+            <div class="project" id="project-11">
+                <h2>11. Generate Columns</h2>
+                <input type="number" id="column-count" placeholder="Number of Columns" min="1" />
+                <button id="generate-columns">Generate Columns</button>
+                <button id="clear-columns">Clear</button>
+                <div id="columns-container"></div>
+            </div>
+            <!--12.Animation-->
+            <div class="project" id="project-12">
+                <h2>12. Animated Name</h2>
+                <input type="text" id="name-input" placeholder="Enter your name" />
+                <button id="animate-name">Animate</button>
+                <div id="name-display" class="name-display"></div>
+            </div>
+            <!--13.Timer-->
+            <div class="project" id="project-13">
+                <h2>13. Count Down/Up Timer</h2>
+                <input type="number" id="timer-input" placeholder="Time in seconds" />
+                <button id="start-timer">Start Timer</button>
+                <button id="stop-timer">Stop Timer</button>
+                <div id="timer-display">0</div>
+            </div>
+            <!--14. Date countdown-->
+            <div class="project" id="project-14">
+                <h2>14. Countdown Timer</h2>
+                <input type="datetime-local" id="date-input" placeholder="Select date and time" />
+                <button id="start-countdown">Start Countdown</button>
+                <button id="stop-countdown" style="display: none;">Stop Countdown</button>
+                <div id="countdown-display" style="display: none;">Time remaining will be displayed here.</div>
+            </div>   
+            <!--15.AutoComplete box-->
+            <div class="project" id="project-15">
+                <h2>15. AutoComplete Box</h2>
+                <input type="text" id="autocomplete-input" placeholder="Start typing..." />
+                <div id="suggestions" class="suggestions-list"></div>
+            </div>                         
+            <!--16. Background Colour-->
+            <div class="project" id="project-16" style="padding: 20px; border: 1px solid #ccc;">
+                <h2>16. Background Color Switcher</h2>
+                <label for="color-select">Choose a background color:</label>
+                <select id="color-select">
+                    <option value="">Select Color</option>
+                    <option value="lightblue">Light Blue</option>
+                    <option value="lightgreen">Light Green</option>
+                    <option value="lightcoral">Light Coral</option>
+                    <option value="lightpink">Light Pink</option>
+                    <option value="lightgray">Light Gray</option>
+                </select>
+            </div>
+            <!--17.Image Swap-->
+            <div class="project" id="project-17">
+                <h2>17. Image Swap </h2>
+                <div class="image-container">
+                    <div class="box" id="box1">
+                        <img src="./assest/images/image1.jpeg" alt="Image 1" id="img1">
+                    </div>
+                    <div class="box" id="box2">
+                        <img src="./assest/images/image2.jpeg" alt="Image 2" id="img2">
+                    </div>
+                </div>
+                <button id="swap-btn">Swap Images</button>
+            </div>                       
+            <!--18.Image Swap-->   
+            <div class="project" id="project-18">
+                <h2>18. Timer Between Start and Stop</h2>
+                <button id="start-stop-btn">Start</button>
+                <p id="output">Time: <span id="time-secs">0</span> seconds</p>
+            </div>
+            <!--19. Text Swap Image-->
+            <div class="project" id="project-19">
+                <h2>19. Hover Text Swap with Image</h2>
+                <div class="container-grid">
+                    <div class="container">
+                        <p class="text">Text</p>
+                        <img src="./assest/images/image1.jpeg" alt="Image 1" class="hover-image">
+                    </div>
+                </div>
+            </div>
+            <!--20.Image Range-->
+            <div class="project" id="project-20">
+                <h2>20. Image Control</h2>
+                <div class="image-container">
+                    <img src="./assest/images/image1.jpeg" alt="Sample Image" id="image">
+                </div>
+                <input type="range" min="0" max="100" value="0" id="range-control">
+            </div>
+            <!--21. Lazy Load-->
+            <div class="project" id="project-21">
+                <h2>21. Lazy Load Image</h2>
+                <div class="image-container">
+                    <img 
+                        data-src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fGFjY2Vzc2libGV8ZW58MHx8fHwxNjU5MDA4NzA3&ixlib=rb-1.2.1&q=80&w=400" 
+                        alt="A scenic view of mountains during sunset" 
+                        class="lazy">
+                </div>
+            </div>                      
+            <!--22.ParticleJs-->  
+            <div class="project" id="project-22">
+                <h2>22. ParticlesJS</h2>
+                <div id="particles-js" style="width: 100%; height: 100px;"></div>
+            </div>
+            <!-- Include Particles.js from CDN -->
+            <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>                                 
+        </div> 
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
