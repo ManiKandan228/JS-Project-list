@@ -53,6 +53,7 @@ main {
     width: 0;
     background-color: #4caf50;
     transition: width 0.5s; 
+    display: none;
 }
 
 /* 5 */
@@ -342,7 +343,7 @@ th {
 #timer-display {
     font-size: 2em;
     margin-top: 20px;
-    color: #ff0000; 
+    color: #1fe605; 
 }
 #timer-input {
     width: 150px;

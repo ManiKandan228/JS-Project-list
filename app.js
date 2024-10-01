@@ -42,8 +42,11 @@ var interval;
 
 startProgressBtn.addEventListener('click', function() {
     let width = 0; 
-
     progressBar.style.width = '0%';
+    
+    progressBar.style.display = 'block';
+    resetProgressBtn.style.display = 'inline-block';
+    startProgressBtn.style.display = 'none';
 
     interval = setInterval(function() {
         if (width >= 100) {
@@ -57,8 +60,12 @@ startProgressBtn.addEventListener('click', function() {
 
 resetProgressBtn.addEventListener('click', function() {
     clearInterval(interval);
-    progressBar.style.width = '0%'; 
+    progressBar.style.width = '0%';
+
+    resetProgressBtn.style.display = 'none';
+    startProgressBtn.style.display = 'inline-block';
 });
+
 
 // No 5
 
